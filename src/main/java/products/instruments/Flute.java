@@ -8,5 +8,8 @@ public class Flute extends Instrument {
         super(salePrice, cost, description, InstrumentType.WOODWIND, name);
     }
 
+    public String play(){
+        return "Tootle...Tootle-too";
+    }
 
 }

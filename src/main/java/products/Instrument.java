@@ -1,9 +1,10 @@
 package products;
 
+import behaviours.IPlay;
 import products.Product;
 import types.InstrumentType;
 
-public abstract class Instrument extends Product {
+public abstract class Instrument extends Product implements IPlay {
 
     private InstrumentType type;
     private String name;

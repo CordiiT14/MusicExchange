@@ -31,4 +31,9 @@ public class FluteTest {
     public void canCalculateMarkUp(){
         assertEquals(60.00, flute.calculateMarkup(), 0.0);
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Tootle...Tootle-too", flute.play());
+    }
 }
