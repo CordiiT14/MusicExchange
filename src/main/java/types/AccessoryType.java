@@ -2,6 +2,7 @@ package types;
 
 public enum AccessoryType {
     SHEET_MUSIC,
+    GENERAL,
     STRING_ACCESSORIES,
     BRASS_ACCESSORIES,
     WOODWIND_ACCESSORIES,
