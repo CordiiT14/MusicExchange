@@ -1,5 +1,7 @@
+import products.instruments.Flute;
 import org.junit.Before;
 import org.junit.Test;
+import types.InstrumentType;
 
 import static org.junit.Assert.assertEquals;
 
@@ -18,5 +20,15 @@ public class FluteTest {
         assertEquals(60.00, flute.getCost(), 0.0);
         assertEquals("n/a", flute.getDescription());
         assertEquals("Recorder", flute.getName());
+    }
+
+    @Test
+    public void hasType(){
+        assertEquals(InstrumentType.WOODWIND, flute.getType());
+    }
+
+    @Test
+    public void canCalculateMarkUp(){
+        assertEquals(60.00, flute.calculateMarkup(), 0.0);
     }
 }

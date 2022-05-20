@@ -1,4 +1,7 @@
-public abstract class Product implements ISell{
+package products;
+import behaviours.ISell;
+
+public abstract class Product implements ISell {
 
     private double salePrice;
     private double cost;
@@ -35,6 +38,6 @@ public abstract class Product implements ISell{
     }
 
     public double calculateMarkup(){
-        return this.salePrice/(this.cost * 100);
+        return getSalePrice()-getCost();
     }
 }

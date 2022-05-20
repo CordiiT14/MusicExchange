@@ -1,3 +1,5 @@
+package types;
+
 public enum InstrumentType {
     STRINGS,
     BRASS,
@@ -7,6 +9,7 @@ public enum InstrumentType {
 
     InstrumentType() {
     }
+
 
 
 }

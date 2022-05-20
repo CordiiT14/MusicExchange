@@ -1,3 +1,5 @@
+package types;
+
 public enum AccessoryType {
     SHEET_MUSIC,
     STRING_ACCESSORIES,

@@ -1,11 +1,16 @@
-public abstract class Instrument extends Product{
+package products;
+
+import products.Product;
+import types.InstrumentType;
+
+public abstract class Instrument extends Product {
 
     private InstrumentType type;
     private String name;
 
     public Instrument(double salePrice, double cost, String description, InstrumentType type, String name) {
         super(salePrice, cost, description);
-        this.type = getType();
+        this.type = type;
         this.name = name;
     }
 
@@ -13,9 +18,6 @@ public abstract class Instrument extends Product{
         return type;
     }
 
-    public void setType(InstrumentType type) {
-        this.type = type;
-    }
 
     public String getName() {
         return name;
